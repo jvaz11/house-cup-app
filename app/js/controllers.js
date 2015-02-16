@@ -15,7 +15,8 @@ angular.module('houseCupApp.controllers', ['firebase.utils', 'simpleLogin'])
     $scope.houses = sync.$asObject();
     $scope.newHouse = {
            name: '',
-           totalPoints: ''
+           totalPoints: '',
+           color: ''
        };
     // Add a new house
     $scope.addHouse = function() {
@@ -29,6 +30,10 @@ angular.module('houseCupApp.controllers', ['firebase.utils', 'simpleLogin'])
             console.log("Error:", error);
         })
     };
+    // checks color
+      $scope.checkValue1 = function() {
+    return $scope.house.color;
+  }
 $scope.sendPoints = function(house) {
             house.totalPoints = parseInt(house.totalPoints) + parseInt(house.amount);
             house.amount = '';

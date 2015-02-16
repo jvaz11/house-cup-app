@@ -1,0 +1,644 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"padding",
+				"padding-top"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"margin-",
+				"margin-left"
+			],
+			[
+				"padd",
+				"padding-top"
+			],
+			[
+				"bac",
+				"background-color"
+			],
+			[
+				"margin",
+				"margin-right"
+			],
+			[
+				"ce",
+				"center-container"
+			],
+			[
+				"index",
+				"indexCounter"
+			],
+			[
+				"text",
+				"text-transform"
+			],
+			[
+				"templ",
+				"templatesRef"
+			],
+			[
+				"new",
+				"newEmail"
+			],
+			[
+				"ge",
+				"getCurrentUser"
+			],
+			[
+				"data",
+				"dataService"
+			],
+			[
+				"fir",
+				"firebase"
+			],
+			[
+				"send",
+				"sendTextMessage"
+			],
+			[
+				"party",
+				"partyServiceObject"
+			],
+			[
+				"fire",
+				"firebase"
+			],
+			[
+				"F",
+				"FBURL"
+			],
+			[
+				"Em",
+				"EmailService"
+			],
+			[
+				"MAIL_",
+				"MAIL_URI"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/Users/Shared/Projects/house-cup-app/app/index.html",
+			"settings":
+			{
+				"buffer_size": 2727,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "admin.html",
+			"settings":
+			{
+				"buffer_size": 1053,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "scoreboard.html",
+			"settings":
+			{
+				"buffer_size": 733,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/Shared/Projects/house-cup-app/app/js/controllers.js",
+			"settings":
+			{
+				"buffer_size": 5012,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/Shared/Projects/house-cup-app/app/js/routes.js",
+			"settings":
+			{
+				"buffer_size": 4755,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/Shared/Projects/house-cup-app/app/css/styles.css",
+			"settings":
+			{
+				"buffer_size": 1419,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 107.0,
+		"selected_items":
+		[
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 575.0
+	},
+	"console":
+	{
+		"height": 125.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/Shared/Projects/house-cup-app/app/css/app.css",
+		"/Users/juan/Downloads/5050/css/styles.css",
+		"/Users/Shared/Projects/house-cup-app/app/index-async.html",
+		"/Users/Shared/Projects/house-cup-app/app/js/app.js",
+		"/Users/Shared/Projects/house-cup-app/app/partials/admin.html",
+		"/Users/Shared/Projects/house-cup-app/app/partials/scoreboard.html",
+		"/Users/Shared/Projects/house-cup-app/app/index.html",
+		"/Users/juan/Dropbox/houseCupApp/app/index.html",
+		"/Users/juan/Dropbox/houseCupApp/app/js/changeEmail.js",
+		"/Users/juan/Dropbox/houseCupApp/app/js/app.js",
+		"/Users/juan/Dropbox/houseCupApp/app/js/controllers.js",
+		"/Users/juan/Dropbox/webdevExperiments/demoApp/www/js/app.js",
+		"/Users/juan/Dropbox/webdevExperiments/demoApp/www/js/ionic.swipecards.js",
+		"/Users/juan/Downloads/tt.html",
+		"/Users/juan/Downloads/ionic-ion-swipe-cards-master/example/www/index.html",
+		"/Users/juan/Downloads/ionic-ion-swipe-cards-master/README.md",
+		"/Users/juan/Dropbox/webdevExperiments/demoApp/www/css/style.css",
+		"/Users/juan/Dropbox/webdevExperiments/demoApp/www/index.html",
+		"/Users/juan/Downloads/ionic-firebase-master/www/js/app.js",
+		"/Users/juan/Downloads/ionic-firebase-master/README.md",
+		"/Users/juan/Dropbox/webdevExperiments/RouteParams/partials/list.html",
+		"/Users/juan/Downloads/OneDrive-2015-02-13/Style,data,Violin/data.json",
+		"/Users/juan/Dropbox/webdevExperiments/routeParamsApp/js/data.json",
+		"/Users/juan/Dropbox/webdevExperiments/routeParamsApp/index.html",
+		"/Users/juan/Dropbox/webdevExperiments/routeParamsApp/partials/details.html",
+		"/Users/juan/Dropbox/webdevExperiments/routeParamsApp/partials/list.html",
+		"/Users/juan/Dropbox/webdevExperiments/routeParamsApp/js/app.js",
+		"/Users/juan/Dropbox/webdevExperiments/routeParamsApp/js/controllers.js",
+		"/Users/juan/Downloads/Style,data,Violin/styles.css",
+		"/Users/juan/Dropbox/webdevExperiments/routeParamsApp/lib/Angular/angular-route.min.js",
+		"/Users/juan/Documents/Projects/experiments/external_api_sample_app/templates/start_page.hdbs",
+		"/Users/juan/Documents/Projects/experiments/external_api_sample_app/app.js",
+		"/Users/juan/Downloads/alfred-workflow-1.11.1/workflow/web.py",
+		"/Users/juan/Dropbox/opsordersmail/app/index.html",
+		"/Users/juan/Documents/Projects/opsordersmail/app/js/controllers.js",
+		"/Users/juan/Documents/Projects/opsordersmail/app/index.html",
+		"/Users/juan/Documents/Projects/opsordersmail/app/js/services.js",
+		"/Users/juan/Documents/Projects/opsordersmail/app/js/app.js",
+		"/Users/juan/Documents/Projects/opsordersmail/app/partials/emails.html",
+		"/Users/juan/Downloads/ui-select-master 2/dist/select.css",
+		"/Users/juan/Downloads/ui-select-master 2/dist/select.js",
+		"/Users/juan/Documents/Projects/opsordersTEST1 safe/app/js/controllers.js",
+		"/Users/juan/Documents/Projects/opsordersTEST1/angularcourseST.sublime-workspace",
+		"/Users/juan/Documents/Projects/angularcourse/app/js/services.js",
+		"/Users/juan/Documents/Projects/angularcourse/app/js/controllers.js",
+		"/Users/juan/Documents/Projects/angularcourse/app/index.html",
+		"/Users/juan/Documents/Projects/angularcourse/app/partials/waitlist.html",
+		"/Users/juan/Documents/Projects/opsordersTEST1/app/partials/landing_page.html",
+		"/Users/juan/Documents/Projects/opsordersTEST1/app/css/app.css",
+		"/Users/juan/Documents/Projects/opsordersTEST1/app/js/app.js",
+		"/Users/juan/Documents/Projects/opsordersTEST1/app/partials/orders.html",
+		"/Users/juan/Documents/Projects/opsordersTEST1/app/index.html",
+		"/Users/juan/Documents/Projects/opsordersTEST1/app/js/services.js",
+		"/Users/juan/Documents/Projects/opsordersTEST1/app/js/controllers.js",
+		"/Users/juan/Documents/Projects/opsordersTEST1/app/js/xeditable.js",
+		"/Users/juan/Downloads/Flat-UI-master/dist/css/flat-ui.css",
+		"/Users/juan/Documents/Projects/angularcourse/app/js/servicesCOPY.js",
+		"/Users/juan/Documents/Projects/angularcourse/app/js/controllersCOPY.js",
+		"/Users/juan/Documents/Projects/emailtool/app/js/controllers.js",
+		"/Users/juan/Documents/Projects/emailtool/app/js/firebase.js",
+		"/Users/juan/Documents/angularfire.js",
+		"/Users/juan/Documents/Projects/emailtool/app/js/app copy.js",
+		"/Users/juan/Documents/Projects/emailtool/app/index.html",
+		"/Users/juan/Documents/Projects/appengine-angular-seed-python-master/app/css/app.css",
+		"/Users/juan/Documents/Projects/appengine-angular-seed-python-master/app/partials/waitlist.html",
+		"/Users/juan/Documents/Projects/appengine-angular-seed-python-master/app/index.html",
+		"/Users/juan/Documents/Projects/appengine-angular-seed-python-master/app/js/controllers.js",
+		"/Users/juan/Documents/Projects/appengine-angular-seed-python-master/app/js/app.js",
+		"/Users/juan/Dropbox/opsorders/css/ opsorders.css",
+		"/Users/juan/Dropbox/opsorders/index.html",
+		"/Users/juan/Dropbox/opsorders/js/egghead.js",
+		"/Users/juan/Dropbox/opsorders/index-static.html",
+		"/Users/juan/Documents/Projects/Joseliz Web/index.html",
+		"/Users/juan/Dropbox/Enplug Projects/opsmail/index.html",
+		"/Users/juan/Dropbox/Enplug Projects/opsmail/views/setuphelper.html",
+		"/Users/juan/Dropbox/Enplug Projects/opsmail/views/common/navigation.html",
+		"/Users/juan/Dropbox/Enplug Projects/opsmail/views/main.html",
+		"/Users/juan/Dropbox/Enplug Projects/opsmail/views/mailcomposer.html",
+		"/Users/juan/Dropbox/Enplug Projects/Ops Tools/views/setupHelper.html",
+		"/Users/juan/Documents/Projects/Enplug Guide/views/emailcomposer.html",
+		"/Users/juan/Downloads/<div class=\"mail-box\">",
+		"/Users/juan/Library/Application Support/Sublime Text 2/Packages/HTML-CSS-JS Prettify/HTMLPrettify.sublime-settings",
+		"/Users/juan/Dropbox/Enplug Projects/Ops Tools/js/directives.js",
+		"/Users/juan/Documents/Projects/Enplug Guide/views/common/navigation.html",
+		"/Users/juan/Documents/Projects/Resources + Assets/Inspinia/Angular_full_version/views/tabs_panels.html"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			"/Users/juan/Dropbox/webdevExperiments/demoApp/www"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"font-s",
+			"color",
+			"height",
+			"{\n",
+			"height",
+			"heig",
+			"order-form",
+			"houseCupApp",
+			"card",
+			"cardTypes",
+			"cards",
+			"cardS",
+			"cards",
+			"cardS",
+			"cards",
+			"CardTypes",
+			"CardsCtrl",
+			"Searching",
+			"CardsCtrl",
+			"href",
+			"alex",
+			"hasht",
+			"loadaccountl",
+			"loadac",
+			"GET",
+			"venue infos",
+			"pizza",
+			"taco",
+			"inputEmail1",
+			"form",
+			"ngmode",
+			"inputPassword3",
+			"OrdersController",
+			"ordersRef",
+			"orders",
+			"newOrder",
+			"orderName",
+			"order",
+			"orders",
+			"order.",
+			"size",
+			"newOrder",
+			"size",
+			"si",
+			"size",
+			");\n",
+			".run",
+			".rus",
+			"notified",
+			"phone",
+			"phoneNu",
+			"waitlist",
+			"newEMail",
+			"eMail",
+			"eMailRef",
+			"TextMessage",
+			"TextM",
+			"parties",
+			"TextMessage",
+			"textMessage",
+			"parties",
+			"Party",
+			"party",
+			"order",
+			"Party",
+			"waitlist",
+			"<script src=\"js/directives.js\"></script>",
+			"<input",
+			"Order",
+			"Orders",
+			"order",
+			"Order",
+			"MailCtrl",
+			"OrdersService",
+			"Main",
+			"app.controller('MainCtrl', ['$scope', 'OrdersService', function ($scope, OrdersService) {\n    $scope.newOrder = { name: '', description: '', count: 0 };\n    $scope.currentOrder = null;\n\n    $scope.orders = OrdersService.getOrders();\n\n    $scope.addOrder = function () {\n        OrdersService.addOrder(angular.copy($scope.newOrder));\n        $scope.newOrder = { name: '', description: '', count: 0 };\n    };\n\n    $scope.updateOrder = function (id) {\n        OrdersService.updateOrder(id);\n    };\n\n    $scope.removeOrder = function (id) {\n        OrdersService.removeOrder(id);\n    };\n}]);",
+			"https://opsorders.firebaseio.com/emailqueue/out",
+			"orderqueue/out",
+			"app.factory('OrdersService', ['$firebase', 'FIREBASE_URI', function ($firebase, FIREBASE_URI) {\n    var ref = new Firebase(FIREBASE_URI);\n    var orders = $firebase(ref);\n\n    var getOrders = function () {\n        return orders;\n    };\n\n    var addOrder = function (order) {\n        orders.$add(order);\n    };\n\n    var updateOrder = function (id) {\n        orders.$save(id);\n    };\n\n    var removeOrder = function (id) {\n        orders.$remove(id);\n    };",
+			"Items",
+			"Item",
+			"item",
+			"Item",
+			"item",
+			"Item",
+			"item",
+			"Item",
+			"]",
+			"[",
+			">\n",
+			"{{data",
+			"jpg",
+			"-3",
+			"live",
+			"women",
+			"<p>",
+			"<i",
+			"logo",
+			"\n            <li ui-sref-active=\"active\">\n                <a ui-sref=\"minor\"><i class=\"fa fa-desktop\"></i> <span class=\"nav-label\">Minor page</span></a>\n            </li>",
+			"Helper",
+			"<span style=\"color: rgb(18, 85, 204);\">",
+			"</span>",
+			"style=\"line-height: normal; margin: 0px; font-stretch: normal; font-family: Arial; color: rgb(35, 35, 35);\"><span style=\"letter-spacing: 0px;\">",
+			"<span style=\"letter-spacing: 0px; color: rgb(18, 85, 204);\">",
+			"</span>",
+			"<span>",
+			"style=\"color: rgb(17, 85, 204);\"",
+			"style=\"line-height: normal; margin: 0px 0px 10px; font-stretch: normal; font-family: Arial; color: rgb(35, 35, 35);\"",
+			"john",
+			"delivered",
+			"email",
+			"Email",
+			"email",
+			"Email"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"nouns",
+			"word",
+			"WordsCtrl"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 2,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/Users/Shared/Projects/house-cup-app/app/index.html",
+					"settings":
+					{
+						"buffer_size": 2727,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1256,
+								1256
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 13.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "admin.html",
+					"settings":
+					{
+						"buffer_size": 1053,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								50,
+								50
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "scoreboard.html",
+					"settings":
+					{
+						"buffer_size": 733,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								371,
+								371
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/Users/Shared/Projects/house-cup-app/app/js/controllers.js",
+					"settings":
+					{
+						"buffer_size": 5012,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								670,
+								670
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "/Users/Shared/Projects/house-cup-app/app/js/routes.js",
+					"settings":
+					{
+						"buffer_size": 4755,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "/Users/Shared/Projects/house-cup-app/app/css/styles.css",
+					"settings":
+					{
+						"buffer_size": 1419,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1335,
+								1335
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 390.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 244.0,
+	"status_bar_visible": true
+}

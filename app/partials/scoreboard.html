@@ -1,17 +1,35 @@
-Enplug House Cup
-<table>
-    <thead>
-        <tr>
-            <th>House</th>
-            <th>Points</th>
-        </tr>
-    </thead>
-    <tr ng-repeat="house in houses">
-        <td>
-            {{ house.name }}
-        </td>
-        <td>
-            {{ house.totalPoints }}
-        </td>
-    </tr>
-</table>
+    <style>
+      .Gryffindor {
+        background-color: #CE000C;
+      }
+      .Ravenclaw {
+        background-color: #003E90;
+      }
+      .Hufflepuff {
+        background-color: #FFB72C;
+      }
+      .Slytherin {
+        background-color: #007523;
+      }
+{
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+    margin-left: 0;
+    background-color: #1D242C;
+    opacity: 100%;
+}
+    </style>
+
+
+
+  <div class="center-container">
+    <div class="center-row crest">
+      <div ng-repeat="house in houses" class="col-xs-3 text-center opaque" ng-class="house.name">
+        <h2>{{ house.totalPoints }}</h2>
+        <h5>{{ house.name }}</h5>
+    </div>
+    </div>
+
+
+  </div>
