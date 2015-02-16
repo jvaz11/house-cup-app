@@ -1,18 +1,20 @@
-    <form ng-submit="addHouse()" class="form-inline order-form">
-        <div class="form-group">
-            <label class="sr-only" for="houseName">House name</label>
-            <input ng-model="newHouse.name" type="text" class="form-control" id="houseName">
-        </div>
-        <div class="form-group">
-            <label class="sr-only" for="totalPoints">Score Count</label>
-            <input ng-model="newHouse.totalPoints" type="text" class="form-control" id="totalPoints" placeholder="">
-        </div>
-        <button type="submit" class="btn btn-primary">Add House</button>
-    </form>
-<ul>
-        <li ng-repeat="house in houses">
-            {{house.name}} 
-            <input type="number" ng-model="house.amount">
-      <button ng-click="sendPoints(house)">Add</button>
-        </li>
-    </ul>
+<form ng-submit="addHouse()" class="form-inline order-form">
+    <div class="form-group">
+        <label class="sr-only" for="houseName">House name</label>
+        <input ng-model="newHouse.name" type="text" class="form-control" id="houseName">
+    </div>
+    <div class="form-group">
+        <label class="sr-only" for="totalPoints">Score Count</label>
+        <input ng-model="newHouse.totalPoints" type="text" class="form-control" id="totalPoints" placeholder="">
+    </div>
+    <button type="submit" class="btn btn-primary">Add House</button>
+</form>
+<br/>
+<form ng-repeat="house in houses" ng-submit="sendPoints(house)" class="form-inline order-form">
+    <div class="form-group">
+       <div> <label for="houseName" class="sr-only">House</label>{{ house.name }}</div>
+        <div><input ng-model="house.amount" type="number" id="houseName" class="form-control">
+    
+<button type="submit" class="btn btn-primary">Add</button></div>
+</div>
+</form>
