@@ -9,7 +9,7 @@ angular.module('houseCupApp.controllers', ['firebase.utils', 'simpleLogin'])
         $scope.FBURL = FBURL;
     }])
 
-.controller('HousesController', ['$scope', '$firebase', 'fbutil', 'FBURL', function($scope, $firebase, fbutil, FBURL) {
+    .controller('HousesController', ['$scope', '$firebase', 'fbutil', 'FBURL', function($scope, $firebase, fbutil, FBURL) {
     var ref = new Firebase(FBURL + "houses");
     var sync = $firebase(ref);
     $scope.houses = sync.$asObject();
@@ -18,7 +18,8 @@ angular.module('houseCupApp.controllers', ['firebase.utils', 'simpleLogin'])
            totalPoints: '',
            color: ''
        };
-    // Add a new house
+
+    // Adds a new house and initial total points, if any 
     $scope.addHouse = function() {
         sync.$push($scope.newHouse).then(function(ref) {
             ref.key(); // key for the new ly created record
@@ -27,18 +28,24 @@ angular.module('houseCupApp.controllers', ['firebase.utils', 'simpleLogin'])
            totalPoints: ''
        };
         }, function(error) {
-            console.log("Error:", error);
+            console.log("Error: try again", error);
         })
     };
-    // checks color
-      $scope.checkValue1 = function() {
-    return $scope.house.color;
-  }
-$scope.sendPoints = function(house) {
+
+    // Sends points to house and updates data in Firebase (note "house" is passed in the function from the view).
+    // Triggered when admin submits form to award points.
+    // parseInt() turns the strings in the form into integers and adds it to the house's current total points.
+    $scope.sendPoints = function(house) {
             house.totalPoints = parseInt(house.totalPoints) + parseInt(house.amount);
             house.amount = '';
             $scope.houses.$save(house.$id);
-        };
+        }
+
+    // Applies the house color to the background-color of the score. Don't need to use this yet (02/16/15)
+    $scope.checkValue1 = function() {
+    return $scope.house.color;
+  };
+
 }])
 
 .controller('ChatCtrl', ['$scope', 'messageList', function($scope, messageList) {

@@ -1,35 +1,81 @@
-    <style>
-      .Gryffindor {
-        background-color: #CE000C;
-      }
-      .Ravenclaw {
-        background-color: #003E90;
-      }
-      .Hufflepuff {
-        background-color: #FFB72C;
-      }
-      .Slytherin {
-        background-color: #007523;
-      }
+<style>
+.Gryffindor {
+    background-color: #CE000C;
+}
+.Ravenclaw {
+    background-color: #003E90;
+}
+.Hufflepuff {
+    background-color: #FFB72C;
+}
+.Slytherin {
+    background-color: #007523;
+}
 {
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: 'Fanwood Text', serif;
     font-size: 30px;
     font-weight: 500;
     margin-left: 0;
-    background-color: #1D242C;
+    background: url(/img/stardust.png);
     opacity: 100%;
 }
-    </style>
 
+body {
+    margin: 0px;
+    padding-top: 17em;
+    background: url(/img/stardust.png);
+}
 
+.row {
+    background: rgba(25, 25, 25, 0);
 
-  <div class="center-container">
+}
+.thumbnail {
+    color: #fff;
+    background: rgba(25, 25, 25, 0);
+    border: 0px;
+    box-shadow: 0px;
+    margin-bottom: 0px;    
+}
+
+.thumbnail h1 {
+    font-family: 'Fanwood Text', serif;
+    font-size: 7em;
+    font-weight: 500;
+}
+
+.house-name {
+    font-family: 'Fanwood Text', serif;
+    color: #fff;
+}
+
+.house-name h2 {
+    color: #fff;
+    font-size: 40px;
+}
+
+</style>
+
+<div class="row">
+    <div ng-repeat="house in houses" class="col-md-3">
+        <div class="thumbnail text-center">
+             <h1>{{ house.totalPoints }}</h1>
+            <img ng-src="/img/{{house.name}}.png"/>
+        </div>
+    </div>
+    <div ng-repeat="house in houses" class="col-md-3">
+        <div class="text-center house-name">
+             <h2>{{ house.name }}</h2>
+        </div>
+    </div>
+</div>
+    
+<!-- Old score grid
+<div class="center-container">
     <div class="center-row crest">
-      <div ng-repeat="house in houses" class="col-xs-3 text-center opaque" ng-class="house.name">
-        <h2>{{ house.totalPoints }}</h2>
-        <h5>{{ house.name }}</h5>
+        <div ng-repeat="house in houses" class="col-xs-3 text-center opaque" ng-class="house.name">
+            <h2>{{ house.totalPoints }}</h2>
+            <h5>{{ house.name }}</h5>
+        </div>
     </div>
-    </div>
-
-
-  </div>
+</div> -->

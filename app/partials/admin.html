@@ -1,9 +1,8 @@
-    <style>
-     body {
-        padding-top: 50px;
-     }
-      
-    </style>
+<style>
+body {
+    padding-top: 50px;
+}
+</style>
 <form ng-submit="addHouse()" class="form-inline point-form">
     <div class="form-group">
         <label class="sr-only" for="houseName">House name</label>
@@ -16,10 +15,13 @@
     <button type="submit" class="btn btn-primary">Add House</button>
 </form>
 <form id="pointform" ng-repeat="house in houses" ng-submit="sendPoints(house)" class="form-inline point-form">
-    <div class="form-group point-form" >
-       <div> <label for="houseName" class="sr-only">House</label>{{ house.name }}</div>
-        <div><input ng-model="house.amount" type="number" id="houseName" class="form-control">
-    
-<button type="submit" class="btn btn-primary">Add</button></div>
-</div>
+    <div class="form-group point-form">
+        <div>
+            <label for="houseName" class="sr-only">House</label>{{ house.name }}</div>
+        <div>
+            <input ng-model="house.amount" type="number" id="houseName" class="form-control">
+
+            <button type="submit" class="btn btn-primary">Add</button>
+        </div>
+    </div>
 </form>
