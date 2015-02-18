@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"font-s",
+				"font-style"
+			],
+			[
 				"padding",
 				"padding-top"
 			],
@@ -91,7 +95,7 @@
 			"file": "/Users/Shared/Projects/house-cup-app/app/index.html",
 			"settings":
 			{
-				"buffer_size": 2727,
+				"buffer_size": 2717,
 				"line_ending": "Unix"
 			}
 		},
@@ -99,7 +103,7 @@
 			"file": "admin.html",
 			"settings":
 			{
-				"buffer_size": 1053,
+				"buffer_size": 1069,
 				"line_ending": "Unix"
 			}
 		},
@@ -107,7 +111,7 @@
 			"file": "scoreboard.html",
 			"settings":
 			{
-				"buffer_size": 733,
+				"buffer_size": 1602,
 				"line_ending": "Unix"
 			}
 		},
@@ -115,7 +119,7 @@
 			"file": "/Users/Shared/Projects/house-cup-app/app/js/controllers.js",
 			"settings":
 			{
-				"buffer_size": 5012,
+				"buffer_size": 5437,
 				"line_ending": "Unix"
 			}
 		},
@@ -124,14 +128,6 @@
 			"settings":
 			{
 				"buffer_size": 4755,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/Users/Shared/Projects/house-cup-app/app/css/styles.css",
-			"settings":
-			{
-				"buffer_size": 1419,
 				"line_ending": "Unix"
 			}
 		}
@@ -172,6 +168,7 @@
 	},
 	"file_history":
 	[
+		"/Users/Shared/Projects/house-cup-app/app/css/styles.css",
 		"/Users/Shared/Projects/house-cup-app/app/css/app.css",
 		"/Users/juan/Downloads/5050/css/styles.css",
 		"/Users/Shared/Projects/house-cup-app/app/index-async.html",
@@ -409,7 +406,7 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 4,
 			"sheets":
 			[
 				{
@@ -417,15 +414,15 @@
 					"file": "/Users/Shared/Projects/house-cup-app/app/index.html",
 					"settings":
 					{
-						"buffer_size": 2727,
+						"buffer_size": 2717,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1256,
-								1256
+								1933,
+								1933
 							]
 						],
 						"settings":
@@ -435,7 +432,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 13.0,
+						"translation.y": 125.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -445,15 +442,15 @@
 					"file": "admin.html",
 					"settings":
 					{
-						"buffer_size": 1053,
+						"buffer_size": 1069,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								50,
-								50
+								1069,
+								1069
 							]
 						],
 						"settings":
@@ -473,15 +470,15 @@
 					"file": "scoreboard.html",
 					"settings":
 					{
-						"buffer_size": 733,
+						"buffer_size": 1602,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								371,
-								371
+								499,
+								499
 							]
 						],
 						"settings":
@@ -491,7 +488,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 34.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -501,15 +498,15 @@
 					"file": "/Users/Shared/Projects/house-cup-app/app/js/controllers.js",
 					"settings":
 					{
-						"buffer_size": 5012,
+						"buffer_size": 5437,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								670,
-								670
+								1773,
+								1773
 							]
 						],
 						"settings":
@@ -536,8 +533,8 @@
 						"selection":
 						[
 							[
-								0,
-								0
+								149,
+								153
 							]
 						],
 						"settings":
@@ -548,34 +545,6 @@
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "/Users/Shared/Projects/house-cup-app/app/css/styles.css",
-					"settings":
-					{
-						"buffer_size": 1419,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1335,
-								1335
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/CSS/CSS.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 390.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -639,6 +608,6 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 244.0,
+	"side_bar_width": 178.0,
 	"status_bar_visible": true
 }
