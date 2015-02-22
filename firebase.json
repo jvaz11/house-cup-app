@@ -1,5 +1,5 @@
 {
-  "firebase": "enplughousecup",
+  "firebase": "housecupapp",
   "public": "app",
   "ignore": [
     "firebase.json",
