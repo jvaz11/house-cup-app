@@ -21,7 +21,7 @@
 }
 body {
     margin: 0px;
-    padding-top: 3em;
+    padding-top: 1em;
     background: url(/img/stardust.png);
 }
 .row {
@@ -50,7 +50,7 @@ body {
 
 .notification-div {
     -webkit-box-shadow: rgb(235, 161, 23) 0px 0px 162px 0px;
-    background-color: rgb(81, 163, 81);
+    /*background-color: rgb(81, 163, 81);*/
     border-bottom-left-radius: 16px;
     border-bottom-right-radius: 16px;
     border-top-left-radius: 16px;
@@ -94,6 +94,7 @@ body {
     z-index: 36;
 }
 
+
 .-show-hide {
     -webkit-animation: fadeInRight 0.5s;
     animation: fadeInRight 0.5s;
@@ -129,7 +130,7 @@ body {
 
 </style>
 <div class="container" id="toast-container">
-<div class="check-element -show-hide notification-div" ng-show="notifications.first" style="clear:both;">
+<div class="check-element -show-hide notification-div" ng-class="notifications.last" ng-show="notifications.first" style="clear:both;">
     <p class="text-center">{{notifications.qty}} points for {{notifications.last}}!</p>
 </div>
 </div>
