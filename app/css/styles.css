@@ -64,19 +64,19 @@ padding-top: 150px;
 }
 /*styles header*/
 
-.display-header {
-    font-family: 'Fanwood Text', serif;
-    height: 120px;
-    font-size: 155px;
-    font-weight: 500;
-    margin-left: 0;
-    opacity: 100%;
-    padding-top: 100px;
-    background: url(/img/stardust.png);
-}
-.display-header img {
-    display: inline;
-}
+/*.display-header {*/
+    /*font-family: 'Fanwood Text', serif;*/
+    /*height: 120px;*/
+    /*font-size: 155px;*/
+    /*font-weight: 500;*/
+    /*margin-left: 0;*/
+    /*opacity: 100%;*/
+    /*padding-top: 100px;*/
+    /*background: url(/img/stardust.png);*/
+/*}*/
+/*.display-header img {*/
+    /*display: inline;*/
+/*}*/
 /*styles text in score form
 .point-form {
   color:;

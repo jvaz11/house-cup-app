@@ -9,10 +9,13 @@ angular.module('houseCupApp.controllers', ['firebase.utils', 'simpleLogin'])
         $scope.FBURL = FBURL;
     }])
 
-    .controller('HousesController', ['$scope', '$firebase', 'fbutil', 'FBURL', function($scope, $firebase, fbutil, FBURL) {
+    .controller('HousesController', ['$scope', '$firebase', 'fbutil', 'FBURL', '$window', '$timeout', function($scope, $firebase, fbutil, FBURL, $window, $timeout) {
     var ref = new Firebase(FBURL + "houses");
     var sync = $firebase(ref);
     $scope.houses = sync.$asObject();
+        var notificationRef = new Firebase(FBURL + "notifications");
+        var notificationSync = $firebase(notificationRef);
+        $scope.notifications = notificationSync.$asObject();
     $scope.newHouse = {
            name: '',
            totalPoints: '',
@@ -35,13 +38,36 @@ angular.module('houseCupApp.controllers', ['firebase.utils', 'simpleLogin'])
     // Sends points to house and updates data in Firebase (note "house" is passed in the function from the view).
     // Triggered when admin submits form to award points.
     // parseInt() turns the strings in the form into integers and adds it to the house's current total points.
+
+        $scope.newAward = {
+            "house": "Ravenclaw",
+            "newPoints": 25
+        };
     $scope.sendPoints = function(house) {
             house.totalPoints = parseInt(house.totalPoints) + parseInt(house.amount);
+            $scope.onShow(house);
             house.amount = '';
             $scope.houses.$save(house.$id);
         }
 
-    // Applies the house color to the background-color of the score. Don't need to use this yet (02/16/15)
+
+        $scope.onShow = function(house) {
+            $scope.notifications.first = true;
+            $scope.notifications.last = house.name;
+            $scope.notifications.qty = parseInt(house.amount);
+            $scope.notifications.$save();
+            $timeout(function() {
+                hideMe();
+            },5000);
+        }
+
+        function hideMe() {
+            $scope.notifications.first = false;
+            $scope.notifications.$save();
+        }
+
+
+        // Applies the house color to the background-color of the score. Don't need to use this yet (02/16/15)
     $scope.checkValue1 = function() {
     return $scope.house.color;
   };

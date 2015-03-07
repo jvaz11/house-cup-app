@@ -21,7 +21,7 @@
 }
 body {
     margin: 0px;
-    padding-top: 17em;
+    padding-top: 3em;
     background: url(/img/stardust.png);
 }
 .row {
@@ -47,7 +47,93 @@ body {
     color: #fff;
     font-size: 40px;
 }
+
+.notification-div {
+    -webkit-box-shadow: rgb(235, 161, 23) 0px 0px 162px 0px;
+    background-color: rgb(81, 163, 81);
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    box-shadow: rgb(235, 161, 23) 0px 0px 162px 0px;
+    box-sizing: border-box;
+    color: rgb(255, 255, 255);
+    display: block;
+    font-family: 'PT Sans Caption', sans-serif;
+    font-size: 18px;
+    height: 296px;
+    line-height: 25.7142868041992px;
+    margin-bottom: 0px;
+    margin-left: 52.15625px;
+    margin-right: 52.15625px;
+    margin-top: 0px;
+    padding-bottom: 15px;
+    padding-left: 50px;
+    padding-right: 15px;
+    padding-top: 15px;
+    top: 45%;
+}
+
+
+.notification-div p {
+    box-sizing: border-box;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    display: block;
+    font-family: 'PT Sans Caption', sans-serif;
+    font-size: 121px;
+    font-weight: bold;
+    height: 256px;
+    line-height: 128.571441650391px;
+    margin-bottom: 10px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    text-align: center;
+    word-wrap: break-word;
+    z-index: 36;
+}
+
+.-show-hide {
+    -webkit-animation: fadeInRight 0.5s;
+    animation: fadeInRight 0.5s;
+    -webkit-animation: bounceIn 2.5s;
+    animation: bounceIn 2.5s;}
+
+.-show-hide.ng-hide {
+    -webkit-animation: flipOutX 2.5s;
+    animation: flipOutX 2.5s;
+    display: block !important;
+    opacity: 0}
+
+#toast-container {
+    z-index: 999999;
+    width: 100%;
+    position: fixed;
+    top: 35%;
+
+    /*overrides*/
+
+
+}
+.display-header {
+    font-family: 'Fanwood Text', serif;
+    height: 120px;
+    font-size: 155px;
+    font-weight: 500;
+    margin-left: 0;
+    margin-bottom: 10%;
+    opacity: 100%;
+    /* padding-top: 100px; */
+}
+
 </style>
+<div class="container" id="toast-container">
+<div class="check-element -show-hide notification-div" ng-show="notifications.first" style="clear:both;">
+    <p class="text-center">{{notifications.qty}} points for {{notifications.last}}!</p>
+</div>
+</div>
+<div class="text-center display-header" style="color: white">HOUSE CUP</a></div>
 
 <div class="row">
     <div ng-repeat="house in houses" class="col-sm-3 col-lg-3">
