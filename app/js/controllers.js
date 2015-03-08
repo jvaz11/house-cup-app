@@ -52,9 +52,9 @@ angular.module('houseCupApp.controllers', ['firebase.utils', 'simpleLogin'])
 
 
         $scope.onShow = function(house) {
-            $scope.notifications.first = true;
-            $scope.notifications.last = house.name;
-            $scope.notifications.qty = parseInt(house.amount);
+            $scope.notifications.show = true;
+            $scope.notifications.name = house.name;
+            $scope.notifications.newcount = parseInt(house.amount);
             $scope.notifications.$save();
             $timeout(function() {
                 hideMe();
@@ -62,7 +62,7 @@ angular.module('houseCupApp.controllers', ['firebase.utils', 'simpleLogin'])
         }
 
         function hideMe() {
-            $scope.notifications.first = false;
+            $scope.notifications.show = false;
             $scope.notifications.$save();
         }
 
