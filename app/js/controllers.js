@@ -9,27 +9,27 @@ angular.module('houseCupApp.controllers', ['firebase.utils', 'simpleLogin'])
         $scope.FBURL = FBURL;
     }])
 
-    .controller('HousesController', ['$scope', '$firebase', 'fbutil', 'FBURL', '$window', '$timeout', function($scope, $firebase, fbutil, FBURL, $window, $timeout) {
+.controller('HousesController', ['$scope', '$firebase', 'fbutil', 'FBURL', '$window', '$timeout', '$http', function($scope, $firebase, fbutil, FBURL, $window, $timeout, $http) {
     var ref = new Firebase(FBURL + "houses");
     var sync = $firebase(ref);
     $scope.houses = sync.$asObject();
-        var notificationRef = new Firebase(FBURL + "notifications");
-        var notificationSync = $firebase(notificationRef);
-        $scope.notifications = notificationSync.$asObject();
+    var notificationRef = new Firebase(FBURL + "notifications");
+    var notificationSync = $firebase(notificationRef);
+    $scope.notifications = notificationSync.$asObject();
     $scope.newHouse = {
-           name: '',
-           totalPoints: '',
-           color: ''
-       };
+        name: '',
+        totalPoints: '',
+        color: ''
+    };
 
     // Adds a new house and initial total points, if any 
     $scope.addHouse = function() {
         sync.$push($scope.newHouse).then(function(ref) {
             ref.key(); // key for the new ly created record
             $scope.newHouse = {
-           name: '',
-           totalPoints: ''
-       };
+                name: '',
+                totalPoints: ''
+            };
         }, function(error) {
             console.log("Error: try again", error);
         })
@@ -39,38 +39,47 @@ angular.module('houseCupApp.controllers', ['firebase.utils', 'simpleLogin'])
     // Triggered when admin submits form to award points.
     // parseInt() turns the strings in the form into integers and adds it to the house's current total points.
 
-        $scope.newAward = {
-            "house": "Ravenclaw",
-            "newPoints": 25
-        };
+    $scope.newAward = {
+        "house": "Ravenclaw",
+        "newPoints": 25
+    };
+
     $scope.sendPoints = function(house) {
-            house.totalPoints = parseInt(house.totalPoints) + parseInt(house.amount);
+        var houseid = house.id;
+        var totalPoints = house.totalPoints + house.amount;
+        $http.patch('https://housecupapp.firebaseio.com/houses/' + houseid + '.json', {
+            totalPoints: totalPoints
+        }).
+        success(function(data, status, headers, config) {
+            console.log(data);
             $scope.onShow(house);
-            house.amount = '';
-            $scope.houses.$save(house.$id);
-        }
+        }).
+        error(function(data, status, headers, config) {
+            // called asynchronously if an error occurs
+            // or server returns response with an error status.
+        });
+    }
+
+    $scope.onShow = function(house) {
+        $scope.notifications.show = true;
+        $scope.notifications.name = house.name;
+        $scope.notifications.newcount = parseInt(house.amount);
+        $scope.notifications.$save();
+        $timeout(function() {
+            hideMe();
+        }, 5000);
+    }
+
+    function hideMe() {
+        $scope.notifications.show = false;
+        $scope.notifications.$save();
+    }
 
 
-        $scope.onShow = function(house) {
-            $scope.notifications.show = true;
-            $scope.notifications.name = house.name;
-            $scope.notifications.newcount = parseInt(house.amount);
-            $scope.notifications.$save();
-            $timeout(function() {
-                hideMe();
-            },5000);
-        }
-
-        function hideMe() {
-            $scope.notifications.show = false;
-            $scope.notifications.$save();
-        }
-
-
-        // Applies the house color to the background-color of the score. Don't need to use this yet (02/16/15)
+    // Applies the house color to the background-color of the score. Don't need to use this yet (02/16/15)
     $scope.checkValue1 = function() {
-    return $scope.house.color;
-  };
+        return $scope.house.color;
+    };
 
 }])
 
