@@ -97,6 +97,21 @@ body {
 
 
 .-show-hide {
+    top: 85%;
+    -webkit-animation: fadeInDown 1s;
+    animation: fadeInDown 1s;
+}
+
+.-show-hide.ng-hide {
+    -webkit-animation: fadeOutDown 1s;
+    animation: fadeOutDown 1s;
+    display: block !important;
+    opacity: 0
+}
+
+/*
+
+.-show-hide {
     -webkit-animation: fadeInRight 0.5s;
     animation: fadeInRight 0.5s;
     -webkit-animation: bounceIn 2.5s;
@@ -106,7 +121,7 @@ body {
     -webkit-animation: flipOutX 2.5s;
     animation: flipOutX 2.5s;
     display: block !important;
-    opacity: 0}
+    opacity: 0}*/
 
 #toast-container {
     z-index: 999999;
