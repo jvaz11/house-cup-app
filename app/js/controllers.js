@@ -46,7 +46,7 @@ angular.module('houseCupApp.controllers', ['firebase.utils', 'simpleLogin'])
     $scope.sendPoints = function(team) {
         var teamid = team.id;
         var totalPoints = team.totalPoints + team.amount;
-        $http.patch('https://teamcupapp.firebaseio.com/teams/' + teamid + '.json', {
+        $http.patch('https://housecupapp.firebaseio.com/teams/' + teamid + '.json', {
             totalPoints: totalPoints
         }).
         success(function(data, status, headers, config) {
