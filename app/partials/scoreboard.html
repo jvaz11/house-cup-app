@@ -1,47 +1,48 @@
 <style>
-.Gryffindor {
+.Red {
     background-color: #CE000C;
 }
-.Ravenclaw {
-    background-color: #003E90;
+.Purple {
+    background-color: #400090;
 }
-.Hufflepuff {
+.Gold {
     background-color: #FFB72C;
 }
-.Slytherin {
+.Green {
     background-color: #007523;
 }
 {
-    font-family: 'Fanwood Text', serif;
+    font-family: 'Helvetica', sans-serif;
     font-size: 30px;
     font-weight: 500;
     margin-left: 0;
-    background: url(/img/stardust.png);
+    background: url(/img/checkerbg.png);
     opacity: 100%;
 }
 body {
     margin: 0px;
     padding-top: 1em;
-    background: url(/img/stardust.png);
+    background: url(/img/checkerbg.png);
 }
 .row {
     background: rgba(25, 25, 25, 0);
 }
 .thumbnail {
-    color: #fff;
+    color: #34414f;
     background: rgba(25, 25, 25, 0);
     border: 0px;
     box-shadow: 0px;
     margin-bottom: 0px;
+
 }
 .thumbnail h1 {
-    font-family: 'Fanwood Text', serif;
+    font-family: 'Helvetica', sans-serif;
     font-size: 7em;
     font-weight: 500;
 }
 .house-name {
-    font-family: 'Fanwood Text', serif;
-    color: #fff;
+    font-family: 'Helvetica', sans-serif;
+    color: #1d242c;
 }
 .house-name h2 {
     color: #fff;
@@ -112,16 +113,12 @@ body {
     width: 100%;
     position: fixed;
     top: 35%;
-
-    /*overrides*/
-
-
 }
 .display-header {
-    font-family: 'Fanwood Text', serif;
+    font-family: 'Helvetica', sans-serif;
     height: 120px;
     font-size: 155px;
-    font-weight: 500;
+    font-weight: 800;
     margin-left: 0;
     margin-bottom: 10%;
     opacity: 100%;
@@ -131,31 +128,26 @@ body {
 </style>
 <div class="container" id="toast-container">
 <div class="check-element -show-hide notification-div" ng-class="notifications.name" ng-show="notifications.show" style="clear:both;">
-    <p class="text-center">{{notifications.newcount}} points for {{notifications.name}}!</p>
+    <p class="text-center">{{notifications.newcount}} points for Team {{notifications.name}}!</p>
 </div>
 </div>
-<div class="text-center display-header" style="color: white">HOUSE CUP</a></div>
+<div class="text-center display-header" style="color: #1d242c">ENPLUG CUP</a></div>
 
 <div class="row">
-    <div ng-repeat="house in houses" class="col-sm-3 col-lg-3">
+    <div ng-repeat="team in teams" class="col-sm-3 col-lg-3">
         <div class="thumbnail text-center">
-            <h1>{{ house.totalPoints }}</h1>
-            <img ng-src="/img/{{house.name}}.png" />
+            <h1>{{ team.totalPoints }}</h1>
+            <img ng-src="/img/{{team.name}}.png" />
         </div>
     </div>
-    <div ng-repeat="house in houses" class="col-sm-3 col-lg-3">
-        <div class="text-center house-name">
-            <h2>{{ house.name }}</h2>
-        </div>
     </div>
-</div>
 
 <!-- Old score grid
 <div class="center-container">
     <div class="center-row crest">
-        <div ng-repeat="house in houses" class="col-xs-3 text-center opaque" ng-class="house.name">
-            <h2>{{ house.totalPoints }}</h2>
-            <h5>{{ house.name }}</h5>
+        <div ng-repeat="team in teams" class="col-xs-3 text-center opaque" ng-class="team.name">
+            <h2>{{ team.totalPoints }}</h2>
+            <h5>{{ team.name }}</h5>
         </div>
     </div>
 </div> -->
