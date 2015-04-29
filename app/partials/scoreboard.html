@@ -2,15 +2,19 @@
 .Red {
     background-color: #CE000C;
 }
+
 .Purple {
     background-color: #400090;
 }
+
 .Gold {
     background-color: #FFB72C;
 }
+
 .Green {
     background-color: #007523;
 }
+
 {
     font-family: 'Helvetica', sans-serif;
     font-size: 30px;
@@ -19,31 +23,37 @@
     background: url(/img/checkerbg.png);
     opacity: 100%;
 }
+
 body {
     margin: 0px;
     padding-top: 1em;
     background: url(/img/checkerbg.png);
 }
+
 .row {
     background: rgba(25, 25, 25, 0);
+    margin-top: -25px;
 }
+
 .thumbnail {
     color: #34414f;
     background: rgba(25, 25, 25, 0);
     border: 0px;
     box-shadow: 0px;
     margin-bottom: 0px;
-
 }
+
 .thumbnail h1 {
     font-family: 'Helvetica', sans-serif;
-    font-size: 7em;
-    font-weight: 500;
+    font-size: 8em;
+    font-weight: 800;
 }
+
 .house-name {
     font-family: 'Helvetica', sans-serif;
     color: #1d242c;
 }
+
 .house-name h2 {
     color: #fff;
     font-size: 40px;
@@ -52,6 +62,7 @@ body {
 .notification-div {
     -webkit-box-shadow: rgb(235, 161, 23) 0px 0px 162px 0px;
     /*background-color: rgb(81, 163, 81);*/
+    
     border-bottom-left-radius: 16px;
     border-bottom-right-radius: 16px;
     border-top-left-radius: 16px;
@@ -75,14 +86,13 @@ body {
     top: 45%;
 }
 
-
 .notification-div p {
     box-sizing: border-box;
     color: rgb(255, 255, 255);
     cursor: pointer;
     display: block;
     font-family: 'PT Sans Caption', sans-serif;
-    font-size: 121px;
+    font-size: 171px;
     font-weight: bold;
     height: 256px;
     line-height: 128.571441650391px;
@@ -94,7 +104,6 @@ body {
     word-wrap: break-word;
     z-index: 36;
 }
-
 
 .-show-hide {
     top: 85%;
@@ -108,7 +117,6 @@ body {
     display: block !important;
     opacity: 0
 }
-
 /*
 
 .-show-hide {
@@ -129,33 +137,57 @@ body {
     position: fixed;
     top: 35%;
 }
+
 .display-header {
     font-family: 'Helvetica', sans-serif;
     height: 120px;
-    font-size: 155px;
+    font-size: 195px;
     font-weight: 800;
     margin-left: 0;
     margin-bottom: 10%;
     opacity: 100%;
+    margin-top: 2%;
     /* padding-top: 100px; */
 }
 
+.Red-logo-image {
+    -webkit-animation-duration: 3s;
+    -webkit-animation-delay: 2.2s;
+    -webkit-animation-iteration-count: infinite;
+}
+.Purple-logo-image {
+    -webkit-animation-duration: 3.5s;
+    -webkit-animation-delay: 2.4s;
+    -webkit-animation-iteration-count: infinite;
+}
+.Gold-logo-image {
+    -webkit-animation-duration: 4s;
+    -webkit-animation-delay: 2.6s;
+    -webkit-animation-iteration-count: infinite;
+}
+.Green-logo-image {
+    -webkit-animation-duration: 4.5s;
+    -webkit-animation-delay: 2.8s;
+    -webkit-animation-iteration-count: infinite;
+}
+
+
 </style>
 <div class="container" id="toast-container">
-<div class="check-element -show-hide notification-div" ng-class="notifications.name" ng-show="notifications.show" style="clear:both;">
-    <p class="text-center">{{notifications.newcount}} points for Team {{notifications.name}}!</p>
+    <div class="check-element -show-hide notification-div" ng-class="notifications.name" ng-show="notifications.show" style="clear:both;">
+        <p class="text-center">{{notifications.newcount}} points for Team {{notifications.name}}!</p>
+    </div>
 </div>
+<div class="text-center display-header" style="color: #1d242c">ENPLUG CUP</a>
 </div>
-<div class="text-center display-header" style="color: #1d242c">ENPLUG CUP</a></div>
-
 <div class="row">
     <div ng-repeat="team in teams" class="col-sm-3 col-lg-3">
         <div class="thumbnail text-center">
             <h1>{{ team.totalPoints }}</h1>
-            <img ng-src="/img/{{team.name}}.png" />
+            <img class="{{team.name}}-logo-image pulse animated" ng-src="/img/{{team.name}}.png" />
         </div>
     </div>
-    </div>
+</div>
 
 <!-- Old score grid
 <div class="center-container">
